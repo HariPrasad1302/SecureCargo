@@ -3,21 +3,19 @@ import { useEffect } from 'react';
 import { initAnimation } from './animation';
 
 export default function HeroScreen() {
-  useEffect(() => {
-    initAnimation();
-  }, []);
+  // useEffect(() => {
+  //   initAnimation();
+  // }, []);
 
   return (
     <>
-    <div id="large-header" className="bg-[url('/cargo3.png')]  bg-cover  min-h-screen">
-    <canvas id="demo-canvas" className="absolute inset-0"></canvas>
+      <div id="large-header" className="bg-[url('/cargo3.png')] bg-cover min-h-screen relative">
+        {/* <canvas id="demo-canvas" className="absolute inset-0"></canvas> */}
 
-    <div  className=" w-full flex items-center justify-center min-h-screen">
-        {/* Overlay */}
-          <div className="container mx-auto flex items-center flex-col md:flex-row">
-            {/* Content */}
+        <div className="w-full flex items-center justify-center min-h-screen">
+          <div className="container mx-auto flex items-center flex-col md:flex-row relative z-10">
             <div className="md:w-3/4 mr-4 relative z-10">
-              <div className=" p-4 md:p-8 text-white">
+              <div className="p-4 md:p-8 text-white">
                 <h2 className='uppercase font-semibold text-[2.2em] md:text-[5.0em] tracking-[0.1em]'>SECURE <span className='font-light'>CARGO</span></h2>
                 <p className='mx-auto max-w-2xl'>
                   Secured Cargo is a decentralised platform that links the physical world of trade and transport 
@@ -29,20 +27,19 @@ export default function HeroScreen() {
                 </p>
 
                 <div className='ml-2 mt-12'>
-                  <a href="#_" class="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
-                    <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
-                    <span class="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
-                    <span class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
-                    <span class="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
-                    <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
-                    <span class="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
-                    <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
-                    <span class="relative">Explore Secure Cargo</span>
+                  <a href="#_" className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
+                    <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>
+                    <span className="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+                    <span className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+                    <span className="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+                    <span className="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+                    <span className="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
+                    <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+                    <span className="relative">Explore Secure Cargo</span>
                   </a>
                 </div>
               </div>
             </div>
-            {/* Box Container */}
             <div className="box-container flex items-center justify-center md:w-1/2 relative z-10">
               <div className="box relative z-20">
                 <span></span>
@@ -63,16 +60,11 @@ export default function HeroScreen() {
               </div>
             </div>
           </div>
+          {/* Gradient overlay for fading effect */}
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-transparent-to-t from-black to-black"></div>
+        </div>
 
-        {/* Background Image with Blur */}
-        {/* <div className="absolute inset-0">
-          <div className=""></div>
-          <canvas id="demo-canvas" className="absolute inset-0"></canvas>
-        </div> */}
       </div>
-
-    </div>
-      
     </>
   );
 }
