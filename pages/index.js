@@ -1,17 +1,26 @@
 import About, { BackgroundCellAnimation, LampDemo } from '@/components/About';
-import Web3TokenStory from '@/components/About';
-import Features from '@/components/Features';
+
 import HeroScreen from '@/components/HeroScreen';
-import { LampContainer } from '@/components/ui/lamp';
+import Footer from '@/components/Layouts/Footer';
+import Navbar from '@/components/Layouts/Navbar';
+import Uses from '@/components/Uses';
+import Tokenomics from '@/components/tokenomic';
+
+import { HoverEffect, MovingLine, Radar } from '@/components/usecases';
 
 export default function Home() {
 
 
   return (
     <>
-      <HeroScreen />
-      {/* <Web3TokenStory/> */}
+    <Navbar/>
+      <HeroScreen/>
       <BackgroundCellAnimation/>
+      <Uses/>
+      <Tokenomics/>
+      <MovingLine/>
+      <Footer/>
+
     </>
   );
 }

@@ -8,10 +8,10 @@ import { StickyScrollRevealDemo } from "./solutions";
 export const BackgroundCellAnimation = () => {
 return (
   <>
-  <div className="relative min-h-screen bg-slate-950  overflow-hidden">
-    <BackgroundCellCore />
-    <div className="relative z-50 mt-32 pointer-events-none select-none">
-      <h1 className="md:text-2xl lg:text-7xl font-medium text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-400 pointer-events-none">
+  <div id="second-section" className="relative min-h-screen bg-white  overflow-hidden">
+    {/* <BackgroundCellCore /> */}
+    <div className="relative z-50 mt-24 mb-8 pointer-events-none select-none">
+      <h1 className="md:text-2xl lg:text-7xl font-medium text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 to-neutral-800 pointer-events-none">
       Blockchain-Powered Cargo <br />
       Security Solutions       </h1>
     </div>
@@ -45,7 +45,7 @@ return (
     className="h-full absolute inset-0"
   >
     <div className="absolute h-[20rem] inset-y-0  overflow-hidden">
-      <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 bg-slate-950 [mask-image:linear-gradient(to_bottom,transparent,black)]"></div>
+      <div className="absolute h-full w-full pointer-events-none -bottom-2 z-40 "></div>
       <div
         className="absolute inset-0 z-20 bg-transparent"
         style={{

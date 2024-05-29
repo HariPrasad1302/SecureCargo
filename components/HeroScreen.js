@@ -9,14 +9,15 @@ export default function HeroScreen() {
 
   return (
     <>
-      <div id="large-header" className="bg-[url('/cargo3.png')] bg-cover min-h-screen relative">
+    <section id="first-section">
+    <div id="large-header" className="bg-[url('/cargo3.png')] bg-cover min-h-screen relative">
         {/* <canvas id="demo-canvas" className="absolute inset-0"></canvas> */}
 
         <div className="w-full flex items-center justify-center min-h-screen">
           <div className="container mx-auto flex items-center flex-col md:flex-row relative z-10">
             <div className="md:w-3/4 mr-4 relative z-10">
               <div className="p-4 md:p-8 text-white">
-                <h2 className='uppercase font-semibold text-[2.2em] md:text-[5.0em] tracking-[0.1em]'>SECURE <span className='font-light'>CARGO</span></h2>
+                <h2 className='uppercase mb-4 font-semibold text-[2.2em] md:text-[4.7em] ml-2 tracking-[0.1em]'>SECURED <span className='font-light'>CARGO</span></h2>
                 <p className='mx-auto max-w-2xl'>
                   Secured Cargo is a decentralised platform that links the physical world of trade and transport 
                   with the main goal of making cargo document transfer simpler, trustworthy and efficient. 
@@ -46,25 +47,30 @@ export default function HeroScreen() {
                 <span></span>
                 <span></span>
                 <span></span>
-                <div className="content space-y-8">
+                <div className=" flex flex-col shadow-xl items-center justify-center content space-y-4">
                   <h2 className='text-xl mt-2 underline'>SECURED CARGO - DECENTRALIZED PLATFORM</h2>
+                  <img
+          src="/Cargo.jpg"
+          alt="get-started"
+          className="w-48 h-48 border-4 border-white object-contain"
+        />
                   <p className=' mx-auto max-w-sm'>
                     Secured Cargo is a decentralised platform that links the physical world of trade and transport 
                     with the main goal of making cargo document transfer simpler, trustworthy and efficient. 
-                    It provides a transparent method of payment and reconciliation and provides insurance and an 
-                    invoice for cargo. Secured Cargo also provides an effective track and trace solution for the entire 
-                    cargo process. Secured Cargo uses Blockchain technology to create a user-focused platform for 
-                    the cargo process.
+ 
                   </p>
                 </div>
               </div>
             </div>
           </div>
           {/* Gradient overlay for fading effect */}
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-transparent-to-t from-black to-black"></div>
+          <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent to-black"></div>
         </div>
 
       </div>
+
+    </section>
+      
     </>
   );
 }
