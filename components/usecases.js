@@ -30,7 +30,9 @@ return (
     <>
     <div id="fourth-section" className="min-h-screen bg-black">
         <div className="text-center">
-            <h1 className="text-5xl font-bold text-white py-12 ">Tamper-Proof Documentation <br></br> and Tracking</h1>
+        <h1 className="md:text-2xl lg:text-7xl font-medium text-center py-8 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-100 pointer-events-none">
+        Tamper-Proof Documentation <br />
+        and Tracking       </h1>
         </div>
     <div
   className="max-w-6xl mx-auto flex flex-row space-x-10 py-16 items-start w-full "

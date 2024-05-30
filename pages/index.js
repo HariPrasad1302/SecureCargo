@@ -15,10 +15,10 @@ export default function Home() {
     <>
     <Navbar/>
       <HeroScreen/>
-      <BackgroundCellAnimation/>
-      <Uses/>
-      <Tokenomics/>
       <MovingLine/>
+      <Tokenomics/>
+      <Uses/>
+      <BackgroundCellAnimation/>
       <Footer/>
 
     </>

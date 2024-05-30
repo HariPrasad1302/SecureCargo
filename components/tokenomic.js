@@ -62,28 +62,29 @@ const Tokenomics = () => {
     }],
   };
   return (
-    <main id="third-section" className="max-w-screen-xl flex items-center justify-center h-screen mx-20 gap-10">
-        <div className="gap-10 w-1/2">
-        <h1 className="text-5xl text-black font-bold mb-8">
+    <div className="bg-black " id="third-section">
+      <main  className="max-w-screen-xl  flex items-center bg-black justify-center h-screen mx-20 gap-10">
+        <div className="gap-10 w-1/2 ml-12">
+        <h1 className="text-5xl text-white font-bold mb-8">
           Tokenomics
         </h1>
 
-        <p className="text-lg font-semibold text-gray-600 mb-5">
+        <p className="text-lg font-semibold text-gray-200 mb-5">
           &#8226; To 	begin with, Cargo will produce a constrained amount of 100 million Cargo Tokens to support its digital ecosystem.
         </p>
-        <p className="text-lg font-semibold text-gray-600 mb-5">
+        <p className="text-lg font-semibold text-gray-200 mb-5">
           &#8226; Leverage blockchain for a tamper-proof and clear transaction
           record.
         </p>
-        <p className="text-lg font-semibold text-gray-600 mb-5">
+        <p className="text-lg font-semibold text-gray-200 mb-5">
           &#8226; Protect your business with secure, immutable blockchain
           technology.
         </p>
-        <p className="text-lg font-semibold text-gray-600 mb-5">
+        <p className="text-lg font-semibold text-gray-200 mb-5">
           &#8226; Reduce fees and increase profitability with our streamlined
           platform.
         </p>
-        <p className="text-lg font-semibold text-gray-600 mb-5">
+        <p className="text-lg font-semibold text-gray-200 mb-5">
           &#8226; Grow your business with a platform that adapts to your
           evolving needs.
         </p>
@@ -119,16 +120,19 @@ const Tokenomics = () => {
                   labelStyle={{
                     fontSize: '5px',
                     fontFamily: 'sans-serif',
-                    fill: '#fff'
+                    fill: 'white'
                   }}
                 />
-                <p className="text-black text-2xl font-medium">Total supply <small>1,000,00,00 DOC</small></p>
+                <p className="text-white text-2xl font-medium">Total supply <small>1,000,00,00 DOC</small></p>
 
 <div ref={toolTip} className="tooltip"></div>
 </div>
       </div>
       
     </main>
+
+    </div>
+    
   );
 };
 
